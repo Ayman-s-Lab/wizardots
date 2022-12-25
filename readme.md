@@ -1,3 +1,7 @@
+<center><h1>My Dotfiles</h1></center><br>
+Welcome to my ArchLinux dotfiles repository! In this repository, you will find my configuration files for various software that I use on my ArchLinux system [blog about software and hardware i use].
+
+
 ## fonts: 
 -   noto-fonts
 - noto-fonts-emoji
