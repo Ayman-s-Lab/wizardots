@@ -1,17 +1,17 @@
 # MY LENOVO THINKPAD T460 DEFAULT KEYS ########
 # mute/unmute audio f1
 super + F1
-	pactl set-sink-mute @DEFAULT_SINK@ {true,false}
-
+    amixer set Capture {cap,nocap}
 
 # - audio volume f2
 super + F2
-	pactl -- set-sink-volume 0 -10%
-
+    volume down
+#	pactl -- set-sink-volume 0 -10%    
 
 # + audio volume f3
 super + F3
-	pactl -- set-sink-volume 0 +10%
+    volume up
+#	pactl -- set-sink-volume 0 +10%
 
 
 # mute/unmute microphone f4 
@@ -19,13 +19,11 @@ super + F3
 
 # decrease brightness f5
 super + F5
-	light -U 5
-
+	brightnessctl s 1%-
 
 # increase brightness f6
 super + F6
-	light -A 5
-
+	brightnessctl s +1%
 
 # open webcam f7
 super + F7
@@ -46,26 +44,16 @@ super + F12
 
 
 ################## THE END OF LENOVO SHORTCUTS	######
-# show rofi emojis
-super + <
-	rofi -show emoji
+# open dmenu
+super + d
+	dmenu_run
 
 # open gnome screenshot
 super + s
-	(gnome-screenshot -a &)
-
+    gnome-screenshot -a -c
 
 # open browser
 super + w
 	firefox
-
-
-# open btop
-super + v
-	(btop &)
-
-# open ranger
-super + y
-    ranger
 
 

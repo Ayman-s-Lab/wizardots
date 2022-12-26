@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "Chosing a wallpaper ..."
+wall=$(find $HOME/pix/wall -type f | shuf -n 1)
+echo "Setting a wallpaper ..."
+feh --no-fehbg --bg-fill $wall
+wal -i $wall >/dev/null
+sed -i 'N;$!P;D' $HOME/.cache/wal/colors-wal-dwm.h
+echo "Recompiling dwm with new colors..."
+(cd $HOME/.local/src/suckless/dwm && sudo make clean install>/dev/null)
+
+echo "Refresh for a new look !!!"

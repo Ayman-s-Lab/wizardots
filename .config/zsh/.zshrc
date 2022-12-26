@@ -27,7 +27,7 @@ HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/history"
 ######### MY ALIASES #################
     alias dl='sudo light -U'
     alias il='sudo light -A'
-    alias vi='nvim'
+    alias vi='vim'
     alias pi='ssh pi@192.168.1.3'
     alias zath='zathura'
     alias show='sxiv *'

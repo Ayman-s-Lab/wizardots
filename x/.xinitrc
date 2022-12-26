@@ -1,5 +1,6 @@
 // exec $HOME/.local/bin/setbg &
  wal -R &
+exec dunst &
 exec picom &
 exec sxhkd &
 exec slstatus &
