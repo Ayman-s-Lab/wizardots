@@ -18,7 +18,7 @@ Welcome to my ArchLinux dotfiles repository! In this repository, you will find m
 - ffmpeg
 - imagemagick
 - man-db
-- xwallpaper
+- feh
 - python-pywal
 - xclip
 - zip
@@ -34,9 +34,7 @@ Welcome to my ArchLinux dotfiles repository! In this repository, you will find m
 - dunst
 - cowsay
 - pamixer
-- ncmpcpp
-
 - bluez
 - bluez-utils
-
-
+- ranger
+..
