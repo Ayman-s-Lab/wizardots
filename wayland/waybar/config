@@ -1,0 +1,104 @@
+{
+  "layer": "top",
+  "height": 32,
+  "margin-top": 0,
+  "margin-left": 0,
+  "margin-bottom": 0,
+  "margin-right": 0,
+  "spacing": 0,
+
+  "modules-left": [
+    "cpu",
+    "memory",
+    "temperature",
+    "tray"
+  ],
+
+  "modules-center": ["wlr/workspaces"],
+  "modules-right": [
+    "battery",
+    "backlight",
+    "pulseaudio",
+    "network",
+    "clock"
+  ],
+
+  "wlr/workspaces": {
+    "sort-by-name": true,
+    "on-click": "activate",
+    "all-outputs": true,
+},
+
+  "tray": {
+    "icon-size": 20,
+    "spacing": 8
+  },
+
+  "clock": {
+    "format": "<b>{:%I:%M %p}</b>",
+    "format-alt": "<b>{:%a.%d,%b}</b>",
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small> {calendar}</small></tt>"
+  },
+
+  "cpu": {
+    "interval": 10,
+    "format": " {usage}%",
+    "max-length": 10,
+    "tooltip": false
+  },
+  "memory": {
+    "interval": 30,
+    "format": " {used}GiB",
+    "format-alt": " {used:0.1f}G",
+    "max-length": 10
+  },
+  "backlight": {
+    "device": "amdgpu_bl1",
+    "format": " {percent}",
+    "tooltip": false,
+  },
+  "network": {
+    "format-wifi": " {essid}",
+    "format-ethernet": " wired",
+    "tooltip": false,
+    "format-disconnected": ""
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}",
+    "format-bluetooth": " ",
+    "format-bluetooth-muted": " ",
+    "tooltip": false,
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+    "on-click": "pactl"
+  },
+  "battery": {
+    "bat": "BAT1",
+    "interval": 60,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-icons": [" ", " ", " ", " "],
+    "max-length": 25,
+    "tooltip": false
+  },
+ "custom/window-name": {
+    "format": "<b>{}</b>",
+    "interval": 1,
+    "exec": "hyprctl activewindow | grep class | awk '{print $2}'"
+  },
+
+  "temperature": {
+    "thermal-zone": 0,
+    "critical-threshold": 80,
+    "format-critical": " {temperatureC}°C",
+    "format": " {temperatureC}°C"
+  },
+
+  
+}

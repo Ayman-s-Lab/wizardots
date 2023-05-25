@@ -1,0 +1,3 @@
+#!/bin/sh
+
+vim -c "normal V | :norm ^f$1" -c "w"

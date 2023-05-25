@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 16px;
+}
+
+window#waybar {
+  background: #000000;
+  opacity : 0.5;
+}
+
+#cpu,
+#memory,
+#temperature {
+  font-size: 15px;
+  background: #282828;
+}
+
+#cpu {
+  color: #ffffff;
+  padding: 0px 10px 0px 12px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+#memory {
+  color: #ffffff;
+  padding: 0px 10px 0px 0px;
+}
+
+#temperature {
+  color: #ffffff;
+  padding: 0px 12px 0px 0px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each workspace name */
+    border: none;
+    border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.focused {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+#workspaces button.active{
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+#battery {
+  color: #ffffff;
+  margin: 0px 10px 0px 0px;
+}
+
+#pulseaudio,
+#backlight {
+  font-size: 15px;
+  background: #282828;
+}
+
+#backlight {
+  color: #ffffff;
+  padding: 0px 10px 0px 10px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+#pulseaudio {
+  color: #ffffff;
+  padding: 0px 10px 0px 0px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+
+#network {
+  color: #ffffff;
+  padding: 0px 10px 0px 10px;
+}
+
+#clock{ 
+  margin: 0px 15px 0px 0px;
+  color: #ffffff;
+  padding: 0px 10px 0px 10px;
+  /*margin: 5px 0px 5px 0px;*/
+}
+/*# sourceMappingURL=style.css.map */
+
