@@ -1,0 +1,72 @@
+Operating System: Arch Linux
+Kernel Version: Linux 6.1.14-1-lts
+CPU: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+RAM: 7.2Gi
+GPU:  Intel Corporation Skylake GT2 [HD Graphics 520] (rev 07)
+Installed software:
+alacritty
+base
+base-devel
+bc
+bluez
+bluez-utils
+brightnessctl
+btop
+code
+docker
+dunst
+firefox
+git
+grim
+grub
+gst-plugin-pipewire
+hyprland-bin
+hyprpaper-git
+imv
+intel-ucode
+iwd
+libnotify
+libpulse
+libreoffice-still
+linux
+linux-firmware
+linux-lts
+man-db
+mariadb
+mpc
+mpd
+mpv
+nemo
+neofetch
+neovim
+nicotine+
+nodejs
+noto-fonts-emoji
+npm
+obs-studio
+pamixer
+pipewire
+pipewire-alsa
+pipewire-jack
+pulseaudio
+python-pip
+slurp
+tmux
+ttf-font-awesome
+ttf-jetbrains-mono
+ttf-joypixels
+unzip
+waybar-hyprland-git
+waylock
+wget
+wireplumber
+wl-clipboard
+wlr-randr
+wofi
+xdg-desktop-portal-wlr
+yay
+zathura
+zathura-pdf-mupdf
+zip
+zram-generator
+zsh
